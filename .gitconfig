@@ -1,0 +1,11 @@
+[core]
+    editor = 'code' --wait
+[user]
+	name = lindsbot
+	email = lindsay@modeanalytics.com
+[push]
+	default = simple
+[log]
+  decorate = short # don't show ref prefixes
+[alias]
+  lg = log --pretty=oneline --abbrev-commit

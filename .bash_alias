@@ -1,0 +1,19 @@
+alias ll='ls -als'
+
+alias subl="open -a Sublime\ Text"
+
+alias gst='git status'
+alias gco='git checkout'
+alias gfo='git fetch origin'
+alias gmm='git fetch origin && git merge origin/master'
+alias gdi='git diff'
+alias glg='git log'
+alias gbr='git branch -vv'
+alias gnb='git checkout master && git pull && git checkout -b $1'
+
+ __git_complete gco _git_checkout
+
+
+# mode/webapp shortcuts
+alias morning='bundle install && bundle exec rake db:migrate && bundle exec rake algolia:configure && bundle exec rake algolia:publish'
+alias tagstaging='git checkout master && git pull && git pull --tags && git tag -f deploy/staging && git push -f origin deploy/staging'
